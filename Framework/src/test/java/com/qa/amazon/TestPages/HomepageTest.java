@@ -8,6 +8,7 @@ import com.qa.amazon.Pages.LoginPage;
 import com.qa.amazon.TestBase.TestBase;
 import com.qa.amazon.Util.Utilities;
 
+//Added a comment
 public class HomepageTest extends TestBase {
 	
 	HomePage homepage;
