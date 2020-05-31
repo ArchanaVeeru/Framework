@@ -12,7 +12,7 @@ import com.qa.amazon.TestBase.TestBase;
 public class Utilities extends TestBase {
 public static String username=prop.getProperty("username");
 public static String password=prop.getProperty("password");
-public static long PAGELOAD_TIME=10;
+public static long PAGELOAD_TIME=20;
 public static long IMPLICIT_TIME=20;
 public static String search="Gift for kids";
 
