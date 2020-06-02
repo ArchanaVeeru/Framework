@@ -19,6 +19,8 @@ public class LoginTest extends TestBase {
 	LoginPage login;
 	//TestBase base=new TestBase();
 	
+	
+	
 	public LoginTest() {
 		super();
 		// TODO Auto-generated constructor stub

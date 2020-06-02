@@ -40,11 +40,13 @@ public class TestBase {
 		String url=prop.getProperty("url");
 		
 		if(browser.equalsIgnoreCase("Chrome")) {
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\ArchanaVeeru\\chromedriver.exe");
 			driver=new ChromeDriver();
 		}
 		if(browser.equalsIgnoreCase("Firefox")) {
-			WebDriverManager.firefoxdriver().setup();
+			//WebDriverManager.firefoxdriver().setup();
+			System.setProperty("webdriver.firefox.driver","C:\\Users\\ArchanaVeeru\\geckodriver.exe");
 			driver=new FirefoxDriver();
 		}
 		
