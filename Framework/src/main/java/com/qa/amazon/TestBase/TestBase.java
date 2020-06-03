@@ -1,19 +1,19 @@
 package com.qa.amazon.TestBase;
 
 import java.io.FileInputStream;
+
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.qa.amazon.Util.Utilities;
 import com.qa.amazon.Util.WebEventListener;
-
-import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 
@@ -41,8 +41,10 @@ public class TestBase {
 		
 		if(browser.equalsIgnoreCase("Chrome")) {
 			//WebDriverManager.chromedriver().setup();
+			ChromeOptions options=new ChromeOptions();
+			options.setBinary("C:\\Users\\ArchanaVeeru\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\ArchanaVeeru\\chromedriver");
-			driver=new ChromeDriver();
+			driver=new ChromeDriver(options);
 		}
 		if(browser.equalsIgnoreCase("Firefox")) {
 			//WebDriverManager.firefoxdriver().setup();
