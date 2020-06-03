@@ -41,12 +41,12 @@ public class TestBase {
 		
 		if(browser.equalsIgnoreCase("Chrome")) {
 			//WebDriverManager.chromedriver().setup();
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\ArchanaVeeru\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\ArchanaVeeru\\chromedriver");
 			driver=new ChromeDriver();
 		}
 		if(browser.equalsIgnoreCase("Firefox")) {
 			//WebDriverManager.firefoxdriver().setup();
-			System.setProperty("webdriver.firefox.driver","C:\\Users\\ArchanaVeeru\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver","C:\\Users\\ArchanaVeeru\\geckodriver");
 			driver=new FirefoxDriver();
 		}
 		
